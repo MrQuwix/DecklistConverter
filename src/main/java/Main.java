@@ -40,7 +40,7 @@ public class Main {
             }
         }
         String[] hyperlinks = newDeck.makeMultiverseURL(multiverseIds);
-        newDeck.addCounts(hyperlinks);
+        hyperlinks = newDeck.addCounts(hyperlinks);
         String finalList ="";
         for(int i=0; i<hyperlinks.length; i++){
             finalList += hyperlinks[i].toString() + "\n";
