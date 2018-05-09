@@ -37,7 +37,7 @@ public class Decklist {
     public String[] addCounts(String[] decklist){
         String[] withCounts = new String[decklist.length];
         for(int i=0; i<decklist.length; i++){
-            withCounts[i] = counts[i] + " " + decklist[i];
+            withCounts[i] = counts[i] + decklist[i];
         }
         return withCounts;
     }
